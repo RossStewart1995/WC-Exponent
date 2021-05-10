@@ -1,0 +1,10 @@
+image: java:11.0.10
+
+stages:
+  - test
+
+unit_test:
+  image: maven:3-jdk-11
+  stage: test
+  script:
+    - mvn clean test
